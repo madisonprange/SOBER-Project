@@ -3,28 +3,101 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SOBER Project – Gallery</title>
+    <title>Madison Prange – S.O.B.E.R. Project</title>
+    <meta name="description" content="Portfolio page highlighting TVAC testing and calibration work for the S.O.B.E.R. payload at Telops, Québec City." />
+    <!-- Tailwind via CDN for quick styling -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Optional: subtle card hover */
+      .card:hover { box-shadow: 0 10px 30px rgba(0,0,0,.08); transform: translateY(-2px); }
+    </style>
   </head>
   <body class="bg-zinc-50 text-zinc-900">
-    <div class="max-w-6xl mx-auto px-6 py-10">
-      <h1 class="text-3xl font-bold mb-6 text-center">SOBER Project Gallery 📸</h1>
-
-      <!-- Image Grid -->
-      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <!-- Replace these with your actual image file names -->
-        <img src="images/tvac1.jpg" alt="TVAC chamber setup" class="rounded-xl shadow hover:scale-105 transition" />
-        <img src="images/tvac2.jpg" alt="Wiring through feedthroughs" class="rounded-xl shadow hover:scale-105 transition" />
-        <img src="images/calibration.jpg" alt="Calibration with blackbody source" class="rounded-xl shadow hover:scale-105 transition" />
-        <img src="images/flight.jpg" alt="Payload integration before flight" class="rounded-xl shadow hover:scale-105 transition" />
-        <img src="images/team.jpg" alt="Team working in the lab" class="rounded-xl shadow hover:scale-105 transition" />
-        <img src="images/results.jpg" alt="Post-test analysis results" class="rounded-xl shadow hover:scale-105 transition" />
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-600 to-fuchsia-600 text-white">
+      <div class="max-w-5xl mx-auto px-6 py-10 text-center">
+        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight flex justify-center items-center gap-3">
+          S.O.B.E.R. Project
+          <span aria-hidden="true">🚀</span>
+        </h1>
+        <p class="mt-3 text-zinc-100/90 max-w-3xl mx-auto">
+          Space Object Brightness Evaluation & Reference — portfolio snapshot of TVAC testing and radiometric calibration work.
+        </p>
+        <div class="mt-6">
+          <a href="https://www.linkedin.com/company/s-o-b-e-r-bexus/posts/?feedView=all" 
+             target="_blank" rel="noopener noreferrer" 
+             class="rounded-xl bg-white/10 px-6 py-2 text-sm font-medium backdrop-blur hover:bg-white/20 inline-block">
+             Project on LinkedIn
+          </a>
+        </div>
       </div>
+    </header>
 
-      <!-- Back Link -->
-      <p class="mt-8 text-center">
-        <a href="index.html" class="text-indigo-600 hover:underline">← Back to Main Page</a>
-      </p>
-    </div>
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-10 space-y-10">
+      <!-- About / Context -->
+      <section class="bg-white rounded-2xl p-6 shadow-sm card">
+        <h2 class="text-xl font-bold">Context</h2>
+        <p class="mt-2 text-zinc-700">
+          During a test campaign at <strong>Telops</strong> in <strong>Québec City</strong>, I supported payload qualification for stratospheric flight within the
+          <strong>European Space Agency’s (ESA) BEXUS program</strong>. The focus was on <strong>Thermal Vacuum (TVAC) testing</strong> and <strong>radiometric calibration</strong>
+          to ensure hardware resilience and measurement accuracy under near-space conditions.
+        </p>
+      </section>
+
+      <!-- Contributions -->
+      <section class="bg-white rounded-2xl p-6 shadow-sm card">
+        <h2 class="text-xl font-bold">Key Contributions</h2>
+        <div class="mt-3 grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-semibold">Thermal Vacuum Testing (TVAC)</h3>
+            <ul class="mt-2 list-disc list-inside space-y-1 text-zinc-700">
+              <li>Set up and operated the TVAC chamber; routed harnesses and placed thermocouples through vacuum feedthroughs.</li>
+              <li>Ran controlled thermal cycles across operational and survival limits to validate hardware reliability.</li>
+              <li>Monitored power stability and component temperature profiles throughout each run.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold">Radiometric Calibration</h3>
+            <ul class="mt-2 list-disc list-inside space-y-1 text-zinc-700">
+              <li>Calibrated the <strong>Telops Radia M100 LWIR</strong> using precision blackbody sources.</li>
+              <li>Captured calibration frames across stepped radiance/temperature points to build response curves.</li>
+              <li>Verified alignment and assessed measurement repeatability.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Analysis & Outcomes -->
+      <section class="bg-white rounded-2xl p-6 shadow-sm card">
+        <h2 class="text-xl font-bold">Data Analysis & Outcomes</h2>
+        <p class="mt-2 text-zinc-700">
+          After testing, I analyzed thermal profiles and calibration frames to generate baseline curves, quantify sensor accuracy,
+          and identify any thermal lag or anomalies. The findings were compiled into the team’s <strong>pre-flight qualification package</strong>
+          and directly supported <strong>mission readiness</strong> for stratospheric deployment.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <!-- Replace with public links to artifacts (PDFs, images, reports) -->
+          <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50">
+            📄 TVAC Summary (PDF)
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-xl border border-zinc-300 px-3 py-2 text-sm hover:bg-zinc-50">
+            📷 Calibration Setup Photos
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact / Footer -->
+      <section class="text-sm text-zinc-600">
+        <div class="flex flex-wrap items-center gap-4">
+          <div><span class="font-semibold">Madison Prange</span></div>
+          <a class="hover:underline" href="mailto:mprange@uwaterloo.ca">mprange@uwaterloo.ca</a>
+          <a class="hover:underline" href="https://www.linkedin.com/in/madison-prange" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="mt-2">Replace the <em>#</em> links above with public URLs (Google Drive, GitHub, or your website) so anyone can open your PDFs.</p>
+      </section>
+    </main>
+
+    <footer class="py-10"></footer>
   </body>
 </html>
