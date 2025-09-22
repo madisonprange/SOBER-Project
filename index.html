@@ -4,14 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Madison Prange – S.O.B.E.R. Project</title>
-    <meta name="description" content="Portfolio page highlighting TVAC testing and calibration work for the S.O.B.E.R. payload at Telops, Québec City." />
-    <!-- Tailwind via CDN for quick styling -->
+    <meta name="description" content="Portfolio page highlighting TVAC testing and calibration work for the S.O.B.E.R. payload." />
+    <!-- Tailwind via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .card:hover { box-shadow: 0 10px 30px rgba(0,0,0,.08); transform: translateY(-2px); }
     </style>
   </head>
   <body class="bg-zinc-50 text-zinc-900">
+
     <!-- Header -->
     <header class="bg-gradient-to-r from-indigo-600 to-fuchsia-600 text-white">
       <div class="max-w-5xl mx-auto px-6 py-10 text-center">
@@ -23,9 +24,8 @@
           Space Object Brightness Evaluation & Reference — portfolio snapshot of TVAC testing and radiometric calibration work.
         </p>
         <div class="mt-6">
-          <!-- ✅ LinkedIn fixed -->
-          <a href="https://www.linkedin.com/company/s-o-b-e-r-bexus/posts/?feedView=all" 
-             target="_blank" rel="noopener noreferrer" 
+          <a href="https://www.linkedin.com/company/s-o-b-e-r-bexus/posts/?feedView=all"
+             target="_blank" rel="noopener noreferrer"
              class="rounded-xl bg-white/10 px-6 py-2 text-sm font-medium backdrop-blur hover:bg-white/20 inline-block">
              Project on LinkedIn
           </a>
@@ -35,13 +35,15 @@
 
     <!-- Main Content -->
     <main class="max-w-5xl mx-auto px-6 py-10 space-y-10">
-      <!-- About / Context -->
+
+      <!-- Context -->
       <section class="bg-white rounded-2xl p-6 shadow-sm card">
         <h2 class="text-xl font-bold">Context</h2>
         <p class="mt-2 text-zinc-700">
-          During a test campaign at <strong>Telops</strong> in <strong>Québec City</strong>, I supported payload qualification for stratospheric flight within the
-          <strong>European Space Agency’s (ESA) BEXUS program</strong>. The focus was on <strong>Thermal Vacuum (TVAC) testing</strong> and <strong>radiometric calibration</strong>
-          to ensure hardware resilience and measurement accuracy under near-space conditions.
+          During a test campaign in Québec City, I supported payload qualification for stratospheric flight within the
+          <strong>European Space Agency (ESA) BEXUS program</strong>. Focus areas included
+          <strong>Thermal Vacuum (TVAC) testing</strong> and <strong>radiometric calibration</strong> to ensure hardware resilience and
+          measurement accuracy under near-space conditions.
         </p>
       </section>
 
@@ -60,7 +62,7 @@
           <div>
             <h3 class="font-semibold">Radiometric Calibration</h3>
             <ul class="mt-2 list-disc list-inside space-y-1 text-zinc-700">
-              <li>Calibrated the <strong>Telops Radia M100 LWIR</strong> using precision blackbody sources.</li>
+              <li>Calibrated LWIR imaging using precision blackbody sources.</li>
               <li>Captured calibration frames across stepped radiance/temperature points to build response curves.</li>
               <li>Verified alignment and assessed measurement repeatability.</li>
             </ul>
@@ -68,66 +70,61 @@
         </div>
       </section>
 
-      <!-- Analysis & Outcomes -->
+      <!-- Data & Outcomes -->
       <section class="bg-white rounded-2xl p-6 shadow-sm card">
         <h2 class="text-xl font-bold">Data Analysis & Outcomes</h2>
         <p class="mt-2 text-zinc-700">
-          After testing, I analyzed thermal profiles and calibration frames to generate baseline curves, quantify sensor accuracy,
-          and identify any thermal lag or anomalies. The findings were compiled into the team’s <strong>pre-flight qualification package</strong>
+          Analyzed thermal profiles and calibration frames to generate baseline curves, quantify sensor accuracy,
+          and identify any thermal lag or anomalies. Findings were compiled into the team’s <strong>pre-flight qualification package</strong>
           and directly supported <strong>mission readiness</strong> for stratospheric deployment.
         </p>
       </section>
-<!-- 📸 Project Photo Highlights -->
-<section class="bg-white rounded-2xl p-6 shadow-sm card">
-  <h2 class="text-xl font-bold">Project Photo Highlights</h2>
-  <p class="mt-2 text-zinc-700">
-    A selection of images from thermal vacuum testing and payload integration.
-  </p>
 
-  <div class="mt-6 grid sm:grid-cols-2 gap-6">
-    <!-- Left column -->
-    <div class="space-y-6">
-      <!-- first photo (no crop, scaled down) -->
-      <div class="bg-zinc-100 flex items-center justify-center rounded-xl shadow">
-        <img
-          src="images/20250731_153142.JPG"
-          alt="TVAC chamber setup"
-          class="object-contain max-h-64 w-full"
-        />
-      </div>
+      <!-- Project Photo Highlights (uniform thumbnails + lightbox) -->
+      <section class="bg-white rounded-2xl p-6 shadow-sm card">
+        <h2 class="text-xl font-bold">Project Photo Highlights</h2>
+        <p class="mt-2 text-zinc-700">A selection of images from thermal vacuum testing and payload integration.</p>
 
-      <!-- last photo (full) -->
-      <img
-        src="images/1756376326013.jpg"
-        alt="Thermal testing additional image"
-        class="rounded-xl shadow hover:scale-105 transition w-full"
-      />
-    </div>
+        <div class="mt-6 grid sm:grid-cols-2 gap-6">
+          <figure class="group rounded-xl overflow-hidden bg-zinc-100 shadow">
+            <img
+              src="images/20250731_153142.JPG"
+              data-full="images/20250731_153142.JPG"
+              alt="TVAC chamber setup"
+              class="w-full h-72 object-cover object-center transition-transform duration-300 group-hover:scale-[1.02] cursor-zoom-in"
+            />
+          </figure>
 
-    <!-- Right column -->
-    <div class="space-y-6">
-      <!-- second photo (no crop, scaled down) -->
-      <div class="bg-zinc-100 flex items-center justify-center rounded-xl shadow">
-        <img
-          src="images/20250801_083504.jpg"
-          alt="Payload wiring during setup"
-          class="object-contain max-h-64 w-full"
-        />
-      </div>
+          <figure class="group rounded-xl overflow-hidden bg-zinc-100 shadow">
+            <img
+              src="images/20250801_083504.jpg"
+              data-full="images/20250801_083504.jpg"
+              alt="Team in lab during setup"
+              class="w-full h-72 object-cover object-center transition-transform duration-300 group-hover:scale-[1.02] cursor-zoom-in"
+            />
+          </figure>
 
-      <!-- third photo (full) -->
-      <img
-        src="images/20250801_084414.jpg"
-        alt="Team working during calibration"
-        class="rounded-xl shadow hover:scale-105 transition w-full"
-      />
-    </div>
-  </div>
-</section>
+          <figure class="group rounded-xl overflow-hidden bg-zinc-100 shadow">
+            <img
+              src="images/1756376326013.jpg"
+              data-full="images/1756376326013.jpg"
+              alt="Thermal testing build"
+              class="w-full h-72 object-cover object-center transition-transform duration-300 group-hover:scale-[1.02] cursor-zoom-in"
+            />
+          </figure>
 
+          <figure class="group rounded-xl overflow-hidden bg-zinc-100 shadow">
+            <img
+              src="images/20250801_084414.jpg"
+              data-full="images/20250801_084414.jpg"
+              alt="Hardware in chamber"
+              class="w-full h-72 object-cover object-center transition-transform duration-300 group-hover:scale-[1.02] cursor-zoom-in"
+            />
+          </figure>
+        </div>
+      </section>
 
-
-      <!-- Contact / Footer -->
+      <!-- Contact -->
       <section class="text-sm text-zinc-600">
         <div class="flex flex-wrap items-center gap-4">
           <div><span class="font-semibold">Madison Prange</span></div>
@@ -137,9 +134,34 @@
       </section>
     </main>
 
-    <footer class="py-10"></footer>
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[999] hidden items-center justify-center bg-black/80 p-4">
+      <button id="lightboxClose"
+              class="absolute top-4 right-4 rounded-full bg-white/90 px-3 py-1 text-sm font-medium shadow">
+        Close
+      </button>
+      <img id="lightboxImg" src="" alt="" class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl" />
+    </div>
+
+    <!-- Tiny lightbox script -->
+    <script>
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbClose = document.getElementById('lightboxClose');
+
+      document.querySelectorAll('img[data-full]').forEach(img => {
+        img.addEventListener('click', () => {
+          lbImg.src = img.getAttribute('data-full');
+          lb.classList.remove('hidden'); lb.classList.add('flex');
+        });
+      });
+
+      function closeLB() {
+        lb.classList.add('hidden'); lb.classList.remove('flex'); lbImg.src = '';
+      }
+      lbClose.addEventListener('click', closeLB);
+      lb.addEventListener('click', (e) => { if (e.target === lb) closeLB(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLB(); });
+    </script>
   </body>
 </html>
-
-
-
