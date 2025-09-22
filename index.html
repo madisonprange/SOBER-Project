@@ -85,15 +85,18 @@
   </p>
 
   <div class="mt-6 grid sm:grid-cols-2 gap-6">
-    <!-- Left column (top image smaller) -->
+    <!-- Left column -->
     <div class="space-y-6">
-      <!-- smaller -->
-      <img
-        src="images/20250731_153142.JPG"
-        alt="TVAC chamber setup"
-        class="rounded-xl shadow hover:scale-105 transition object-cover w-full h-64"
-      />
-      <!-- normal (keeps natural aspect) -->
+      <!-- first photo (no crop, scaled down) -->
+      <div class="bg-zinc-100 flex items-center justify-center rounded-xl shadow">
+        <img
+          src="images/20250731_153142.JPG"
+          alt="TVAC chamber setup"
+          class="object-contain max-h-64 w-full"
+        />
+      </div>
+
+      <!-- last photo (full) -->
       <img
         src="images/1756376326013.jpg"
         alt="Thermal testing additional image"
@@ -101,15 +104,18 @@
       />
     </div>
 
-    <!-- Right column (top image smaller) -->
+    <!-- Right column -->
     <div class="space-y-6">
-      <!-- smaller -->
-      <img
-        src="images/20250801_083504.jpg"
-        alt="Payload wiring during setup"
-        class="rounded-xl shadow hover:scale-105 transition object-cover w-full h-64"
-      />
-      <!-- normal (keeps natural aspect) -->
+      <!-- second photo (no crop, scaled down) -->
+      <div class="bg-zinc-100 flex items-center justify-center rounded-xl shadow">
+        <img
+          src="images/20250801_083504.jpg"
+          alt="Payload wiring during setup"
+          class="object-contain max-h-64 w-full"
+        />
+      </div>
+
+      <!-- third photo (full) -->
       <img
         src="images/20250801_084414.jpg"
         alt="Team working during calibration"
@@ -118,6 +124,7 @@
     </div>
   </div>
 </section>
+
 
 
       <!-- Contact / Footer -->
@@ -133,5 +140,6 @@
     <footer class="py-10"></footer>
   </body>
 </html>
+
 
 
